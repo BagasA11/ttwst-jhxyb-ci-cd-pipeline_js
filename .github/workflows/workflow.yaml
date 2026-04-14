@@ -10,9 +10,7 @@ jobs:
     runs-on: "ubuntu-latest"
     container: "node:20-alpine" 
   steps:
-    # checkout > install dependencies > lint > unit test
-    - name: Checkout repository
-      uses: actions/checkout@v6
+    - uses: actions/checkout@v6
     - name: Install npm package
       run: npm install
     - name: lint codespace to ensure met standard style
