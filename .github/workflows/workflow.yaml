@@ -10,7 +10,7 @@ jobs:
     runs-on: "ubuntu-22.04"
     container: "node:20-alpine" 
   steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v4
     - name: Install npm package
       run: npm install
     - name: lint codespace to ensure met standard style
